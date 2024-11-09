@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+div{
+    border: 1px solid blue;
+}
+p{
+    border: 1px solid green;
+    margin: 10px;
+    padding: 10px;
+}
+div p{
+    color: brown;
+}
+div>p{
+    color: green;
+}
+p::first-line{color: brown;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+transition: all ease 1s;
+}
+.box:hover{
+    background-color: rgb(11, 11, 12);
+width: 300px;
+}
+a:visited{
+    color: brown;
+}
+a:active{
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <footer>
+            <p>this is test text</p>
+        <p>this is test text</p>
+        </footer>
+        <p>this is test text</p>
+        <p>this is test text</p>
+        <p>this is test text</p>
+        <p>this is test text</p>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laudantium?</p>
+<hr>
+<div class="box"></div>
+<hr>
+<a href="https://codeyad.com">codeyad</a>
+</body>
+</html>

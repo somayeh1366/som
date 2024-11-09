@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main-box{
+    width: 350px;
+    height: 600px;
+    border: 1px solid red;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(img.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.chat-item{
+    background-color: rgb(113, 211, 154);
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px 10px;
+    position: relative;
+}
+.chat-item p{
+    color: white;
+    padding: 5px;
+}
+.chat-item::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(113, 255, 55);
+    bottom: -5px;
+    left: -3px;
+    transform: rotateZ(90deg) skewX(50deg);
+}
+    </style>
+</head>
+<body>
+    <div class="main-box">
+ <div class="chat-item">
+    <p>
+        test text
+    </p>
+ </div>
+    </div>
+</body>
+</html>
